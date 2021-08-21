@@ -552,7 +552,10 @@ footer .footer-inside ul li {
 }
 
 @media screen and (max-width: 1052px) {
-  .burger-menu {
+  .header-bg header {
+    background-position: 22% 50%;
+  }
+  .header-bg header .burger-menu {
     display: none;
     position: relative;
     z-index: 2;
@@ -567,28 +570,28 @@ footer .footer-inside ul li {
     -webkit-transition: 200ms ease;
     transition: 200ms ease;
   }
-  .burger-menu ul {
+  .header-bg header .burger-menu ul {
     list-style-type: none;
     margin: auto;
     width: 90%;
     text-align: center;
   }
-  .burger-menu ul li {
+  .header-bg header .burger-menu ul li {
     margin: 1rem 0rem;
   }
-  .burger-menu ul li ul {
+  .header-bg header .burger-menu ul li ul {
     display: none;
     background-color: rgba(194, 194, 194, 0.247);
     border-radius: 6px;
     padding: 2rem 0rem;
   }
-  .burger-menu ul li ul li a {
+  .header-bg header .burger-menu ul li ul li a {
     font-size: 1.4rem;
   }
-  .burger-menu ul li .burger-show-links {
+  .header-bg header .burger-menu ul li .burger-show-links {
     display: block;
   }
-  .burger-menu ul li a {
+  .header-bg header .burger-menu ul li a {
     text-decoration: none;
     color: #3f4164;
     font-size: 1.6rem;
@@ -596,14 +599,14 @@ footer .footer-inside ul li {
     font-family: "Overpass", sans-serif;
     font-weight: 600;
   }
-  .burger-menu ul li svg path {
+  .header-bg header .burger-menu ul li svg path {
     stroke: black;
   }
-  .burger-menu ul li .burger-up-arrow {
+  .header-bg header .burger-menu ul li .burger-up-arrow {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
   }
-  .burger-menu ul .login-signup {
+  .header-bg header .burger-menu ul .login-signup {
     border-top: 1px solid gray;
     width: 100%;
     height: auto;
@@ -619,7 +622,7 @@ footer .footer-inside ul li {
         -ms-flex-align: center;
             align-items: center;
   }
-  .burger-menu ul .login-signup a {
+  .header-bg header .burger-menu ul .login-signup a {
     font-size: 1.8rem;
     padding: 1.5rem 0rem;
     text-decoration: none;
@@ -627,7 +630,7 @@ footer .footer-inside ul li {
     font-family: "Overpass", sans-serif;
     font-weight: 600;
   }
-  .burger-menu ul .login-signup button {
+  .header-bg header .burger-menu ul .login-signup button {
     margin-top: 10px;
     font-size: 1.8rem;
     padding: 1rem 2rem;
@@ -640,11 +643,8 @@ footer .footer-inside ul li {
     cursor: pointer;
     font-family: "Overpass", sans-serif;
   }
-  .show-burger-menu {
+  .header-bg header .show-burger-menu {
     display: block;
-  }
-  .header-bg header {
-    background-position: 22% 50%;
   }
   .header-bg header nav ul li {
     display: none;

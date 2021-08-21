@@ -455,95 +455,95 @@ footer {
 }
 
 @media screen and (max-width: 1052px) {
-	.burger-menu {
-		display: none;
-		position: relative;
-		z-index: 2;
-		height: auto;
-		width: 90%;
-		margin: auto;
-		background-color: white;
-		border-radius: 5px;
-		box-shadow: 1px 1px 25px rgba(54, 54, 54, 0.377);
-		padding: 2rem 1rem;
-		transition: 200ms ease;
-		ul {
-			list-style-type: none;
-			margin: auto;
-			width: 90%;
-			text-align: center;
-			li {
-				ul {
-					display: none;
-					background-color: rgba(194, 194, 194, 0.247);
-					border-radius: 6px;
-					padding: 2rem 0rem;
-					li {
-						a {
-							font-size: 1.4rem;
-						}
-					}
-				}
-				.burger-show-links {
-					display: block;
-				}
-				a {
-					text-decoration: none;
-					color: hsl(237, 23%, 32%);
-					font-size: 1.6rem;
-					margin-right: 10px;
-					font-family: "Overpass", sans-serif;
-					font-weight: 600;
-				}
-				svg path {
-					stroke: black;
-				}
-				.burger-up-arrow {
-					transform: rotate(180deg);
-				}
-				margin: 1rem 0rem;
-			}
-			.login-signup {
-				border-top: 1px solid gray;
-				width: 100%;
-				height: auto;
-				padding: 1rem 0rem;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				a {
-					font-size: 1.8rem;
-					padding: 1.5rem 0rem;
-					text-decoration: none;
-					color: hsl(237, 23%, 32%);
-					font-family: "Overpass", sans-serif;
-					font-weight: 600;
-				}
-				button {
-					margin-top: 10px;
-					font-size: 1.8rem;
-					padding: 1rem 2rem;
-					border-radius: 30px;
-					background-image: linear-gradient(
-						to right,
-						hsl(13, 100%, 72%),
-						hsl(353, 100%, 62%)
-					);
-					border: none;
-					font-weight: 600;
-					color: white;
-					cursor: pointer;
-					font-family: "Overpass", sans-serif;
-				}
-			}
-		}
-	}
-	.show-burger-menu {
-		display: block;
-	}
 	.header-bg {
 		header {
 			background-position: 22% 50%;
+			.burger-menu {
+				display: none;
+				position: relative;
+				z-index: 2;
+				height: auto;
+				width: 90%;
+				margin: auto;
+				background-color: white;
+				border-radius: 5px;
+				box-shadow: 1px 1px 25px rgba(54, 54, 54, 0.377);
+				padding: 2rem 1rem;
+				transition: 200ms ease;
+				ul {
+					list-style-type: none;
+					margin: auto;
+					width: 90%;
+					text-align: center;
+					li {
+						ul {
+							display: none;
+							background-color: rgba(194, 194, 194, 0.247);
+							border-radius: 6px;
+							padding: 2rem 0rem;
+							li {
+								a {
+									font-size: 1.4rem;
+								}
+							}
+						}
+						.burger-show-links {
+							display: block;
+						}
+						a {
+							text-decoration: none;
+							color: hsl(237, 23%, 32%);
+							font-size: 1.6rem;
+							margin-right: 10px;
+							font-family: "Overpass", sans-serif;
+							font-weight: 600;
+						}
+						svg path {
+							stroke: black;
+						}
+						.burger-up-arrow {
+							transform: rotate(180deg);
+						}
+						margin: 1rem 0rem;
+					}
+					.login-signup {
+						border-top: 1px solid gray;
+						width: 100%;
+						height: auto;
+						padding: 1rem 0rem;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						a {
+							font-size: 1.8rem;
+							padding: 1.5rem 0rem;
+							text-decoration: none;
+							color: hsl(237, 23%, 32%);
+							font-family: "Overpass", sans-serif;
+							font-weight: 600;
+						}
+						button {
+							margin-top: 10px;
+							font-size: 1.8rem;
+							padding: 1rem 2rem;
+							border-radius: 30px;
+							background-image: linear-gradient(
+								to right,
+								hsl(13, 100%, 72%),
+								hsl(353, 100%, 62%)
+							);
+							border: none;
+							font-weight: 600;
+							color: white;
+							cursor: pointer;
+							font-family: "Overpass", sans-serif;
+						}
+					}
+				}
+			}
+			.show-burger-menu {
+				display: block;
+			}
 			nav {
 				ul {
 					li {
