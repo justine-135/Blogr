@@ -1,0 +1,735 @@
+$links: rgba(255, 255, 255, 0.918);
+$cta: hsl(356, 100%, 66%);
+$feature: hsl(207, 13%, 34%);
+
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+.header-bg {
+	height: 95vh;
+	min-height: 600px;
+	width: 100%;
+	background-image: linear-gradient(
+		to right,
+		hsl(13, 100%, 72%),
+		hsl(353, 100%, 62%)
+	);
+	header {
+		position: relative;
+		height: 100%;
+		width: 100%;
+
+		background-image: url("../images/bg-pattern-intro.svg");
+		background-size: 180%;
+		background-position: 22% 50%;
+		.burger-menu {
+			display: none;
+		}
+
+		nav {
+			height: 70px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			ul {
+				display: flex;
+				align-items: center;
+				width: 90%;
+				list-style: none;
+				.logo {
+					margin-right: 50px;
+				}
+				li {
+					margin-right: 30px;
+					display: flex;
+					align-items: center;
+					cursor: pointer;
+
+					a {
+						text-decoration: none;
+						font-size: 1.6rem;
+						color: $links;
+						font-family: "Ubuntu", sans-serif;
+						margin-right: 10px;
+					}
+				}
+				.up-arrow {
+					transform: rotate(180deg);
+				}
+				li:hover a {
+					text-decoration: underline;
+					color: white;
+				}
+				li:hover svg path {
+					stroke: white;
+				}
+				.login-signup {
+					margin-left: auto;
+					a {
+						font-size: 1.6rem;
+						color: $links;
+						text-decoration: none;
+						font-family: "Ubuntu", sans-serif;
+					}
+					a:hover {
+						color: white;
+					}
+					button {
+						margin-left: 20px;
+						padding: 1rem 2rem;
+						font-size: 1.6rem;
+						border-radius: 30px;
+						font-weight: 600;
+						border: none;
+						color: $cta;
+						background-color: white;
+						cursor: pointer;
+						font-family: "Ubuntu", sans-serif;
+						transition: 100ms ease;
+					}
+					button:hover {
+						background-color: rgba(255, 255, 255, 0.288);
+						color: white;
+					}
+				}
+			}
+		}
+
+		.header-message {
+			h1 {
+				font-size: 5.6rem;
+				color: white;
+				font-family: "Overpass", sans-serif;
+				font-weight: 600;
+			}
+			span {
+				padding: 20px 0px 50px 0px;
+				font-size: 1.6rem;
+				font-weight: 300;
+				color: rgba(255, 255, 255, 0.918);
+				font-family: "Overpass", sans-serif;
+			}
+			width: 80%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.cta-buttons {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				width: 250px;
+
+				.cta-start {
+					padding: 0.75rem 1rem;
+					font-size: 1.6rem;
+					border-radius: 30px;
+					font-weight: 600;
+					border: none;
+					color: $cta;
+					background-color: white;
+					cursor: pointer;
+					font-family: "Ubuntu", sans-serif;
+					transition: 100ms ease;
+				}
+				.cta-start:hover {
+					background-color: rgba(255, 255, 255, 0.288);
+					color: white;
+				}
+				.cta-learn {
+					padding: 0.75rem 1rem;
+					font-size: 1.6rem;
+					border-radius: 30px;
+					font-weight: 400;
+					border: 1px solid white;
+					color: white;
+					background-color: transparent;
+					cursor: pointer;
+					font-family: "Ubuntu", sans-serif;
+					transition: 100ms ease;
+				}
+				.cta-learn:hover {
+					background-color: white;
+					color: $cta;
+					font-weight: 700;
+				}
+			}
+		}
+		.hamburger {
+			display: none;
+		}
+		.header-connect {
+			height: auto;
+			width: 180px;
+			background-color: rgb(255, 255, 255);
+			text-align: left;
+			font-size: 1.6rem;
+			padding: 2.5rem 2rem;
+			border-radius: 5px;
+			box-shadow: 1px 1px 25px rgba(54, 54, 54, 0.377);
+			margin-left: 426px;
+			position: relative;
+			z-index: 2;
+			display: none;
+			li {
+				padding: 0.5rem 0rem;
+				list-style: none;
+				a {
+					font-size: 1.4rem;
+					color: black;
+					text-decoration: none;
+					font-family: "Overpass", sans-serif;
+					font-weight: 300;
+				}
+				a:hover {
+					font-weight: 600;
+				}
+			}
+		}
+		.header-connect-show {
+			display: block;
+		}
+		.header-company {
+			height: auto;
+			width: 180px;
+			background-color: rgb(255, 255, 255);
+			text-align: left;
+			font-size: 1.6rem;
+			padding: 2.5rem 2rem;
+			border-radius: 5px;
+			box-shadow: 1px 1px 25px rgba(54, 54, 54, 0.377);
+			margin-left: 310px;
+			position: relative;
+			z-index: 2;
+			display: none;
+			li {
+				padding: 0.5rem 0rem;
+				list-style: none;
+				a {
+					font-size: 1.4rem;
+					color: black;
+					text-decoration: none;
+					font-family: "Overpass", sans-serif;
+					font-weight: 300;
+				}
+				a:hover {
+					font-weight: 600;
+				}
+			}
+		}
+		.header-company-show {
+			display: block;
+		}
+		.header-product {
+			height: auto;
+			width: 180px;
+			background-color: rgb(255, 255, 255);
+			text-align: left;
+			font-size: 1.6rem;
+			padding: 2.5rem 2rem;
+			border-radius: 5px;
+			box-shadow: 1px 1px 25px rgba(54, 54, 54, 0.377);
+			margin-left: 200px;
+			position: relative;
+			z-index: 2;
+			display: none;
+			li {
+				padding: 0.5rem 0rem;
+				list-style: none;
+				a {
+					font-size: 1.4rem;
+					color: black;
+					text-decoration: none;
+					font-family: "Overpass", sans-serif;
+					font-weight: 300;
+				}
+				a:hover {
+					font-weight: 600;
+				}
+			}
+		}
+		.header-product-show {
+			display: block;
+		}
+	}
+
+	border-radius: 0px 0px 0px 80px;
+}
+
+.features {
+	height: 100vh;
+	min-height: 600px;
+	width: 100%;
+	display: grid;
+	position: relative;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 8% auto;
+	grid-template-areas:
+		"blank blank"
+		"features svg";
+	.features-welcome {
+		position: absolute;
+		top: 15%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 3rem;
+		font-family: "Overpass", sans-serif;
+		font-weight: 600;
+		color: $feature;
+		text-align: center;
+	}
+	.feature-text-div {
+		h6 {
+			font-size: 2.4rem;
+			padding: 1rem 0rem;
+			font-family: "Overpass", sans-serif;
+			color: $feature;
+			font-weight: 600;
+		}
+		font-family: "Overpass", sans-serif;
+		color: $feature;
+		font-weight: 300;
+		font-size: 1.6rem;
+		line-height: 3rem;
+		margin-top: 80px;
+		grid-area: features;
+		margin-left: 10%;
+		.feature-text {
+			margin-bottom: 30px;
+		}
+	}
+	.feature-svg {
+		grid-area: svg;
+		background-image: url("../images/illustration-editor-desktop.svg");
+
+		background-position: 180px 50%;
+		background-size: 88%;
+		background-repeat: no-repeat;
+	}
+}
+
+.infrastructure-bg {
+	border-radius: 0px 80px 0px 80px;
+	margin: 100px 0rem;
+	height: 400px;
+	width: 100%;
+	background-image: linear-gradient(
+		to right,
+		hsl(237, 17%, 21%),
+		hsl(237, 23%, 32%)
+	);
+	position: relative;
+	overflow: visible;
+	.phones {
+		height: 700px;
+		width: 100%;
+		background-image: url("../images/illustration-phones.svg");
+		background-size: 600px;
+		background-repeat: no-repeat;
+		position: absolute;
+		top: -20%;
+	}
+	.infrastructure {
+		height: 100%;
+		width: 100%;
+		background-repeat: no-repeat;
+		background-image: url("../images/bg-pattern-circles.svg");
+		background-position: -300px 80%;
+		background-size: 100%;
+		display: flex;
+		align-items: center;
+
+		.text {
+			margin-left: 600px;
+			max-width: 700px;
+			font-size: 1.6rem;
+			color: white;
+			font-family: "Overpass", sans-serif;
+			font-weight: 300;
+			line-height: 3rem;
+			p {
+				width: 80%;
+			}
+			h6 {
+				font-size: 2.4rem;
+				font-family: "Overpass", sans-serif;
+				font-weight: 600;
+				color: white;
+				padding: 1rem 0rem;
+			}
+		}
+	}
+}
+
+.summary {
+	height: 100vh;
+	min-height: 600px;
+	width: 100%;
+	display: grid;
+	position: relative;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 8% auto;
+	grid-template-areas:
+		"blank blank"
+		"svg feature";
+	.summary-svg {
+		background-image: url("../images/illustration-laptop-desktop.svg");
+		grid-area: svg;
+		background-position: -110px 50%;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+	.text-div {
+		grid-area: feature;
+		margin-right: 10%;
+		font-size: 1.6rem;
+		font-family: "Overpass", sans-serif;
+		color: $feature;
+		font-weight: 300;
+		font-size: 1.6rem;
+		line-height: 3rem;
+		margin-top: 89px;
+		.text {
+			margin-bottom: 30px;
+		}
+		h6 {
+			font-size: 2.4rem;
+			padding: 1rem 0rem;
+			font-family: "Overpass", sans-serif;
+			color: $feature;
+			font-weight: 600;
+		}
+	}
+}
+
+footer {
+	margin-top: 100px;
+	height: 300px;
+	width: 100%;
+	background-color: hsl(240, 10%, 16%);
+	border-radius: 0px 80px 0px 0px;
+	display: flex;
+	.footer-inside {
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+		margin: 50px auto;
+		width: 90%;
+		svg {
+			margin-top: -12px;
+		}
+		ul {
+			font-family: "Overpass", sans-serif;
+
+			.heading {
+				font-size: 1.6rem;
+				color: white;
+				margin-bottom: 30px;
+				cursor: pointer;
+			}
+			list-style: none;
+			a {
+				color: rgba(255, 255, 255, 0.568);
+				font-size: 1.6rem;
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+			li {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1052px) {
+	.burger-menu {
+		display: none;
+		position: relative;
+		z-index: 2;
+		height: auto;
+		width: 90%;
+		margin: auto;
+		background-color: white;
+		border-radius: 5px;
+		box-shadow: 1px 1px 25px rgba(54, 54, 54, 0.377);
+		padding: 2rem 1rem;
+		transition: 200ms ease;
+		ul {
+			list-style-type: none;
+			margin: auto;
+			width: 90%;
+			text-align: center;
+			li {
+				ul {
+					display: none;
+					background-color: rgba(194, 194, 194, 0.247);
+					border-radius: 6px;
+					padding: 2rem 0rem;
+					li {
+						a {
+							font-size: 1.4rem;
+						}
+					}
+				}
+				.burger-show-links {
+					display: block;
+				}
+				a {
+					text-decoration: none;
+					color: hsl(237, 23%, 32%);
+					font-size: 1.6rem;
+					margin-right: 10px;
+					font-family: "Overpass", sans-serif;
+					font-weight: 600;
+				}
+				svg path {
+					stroke: black;
+				}
+				.burger-up-arrow {
+					transform: rotate(180deg);
+				}
+				margin: 1rem 0rem;
+			}
+			.login-signup {
+				border-top: 1px solid gray;
+				width: 100%;
+				height: auto;
+				padding: 1rem 0rem;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				a {
+					font-size: 1.8rem;
+					padding: 1.5rem 0rem;
+					text-decoration: none;
+					color: hsl(237, 23%, 32%);
+					font-family: "Overpass", sans-serif;
+					font-weight: 600;
+				}
+				button {
+					margin-top: 10px;
+					font-size: 1.8rem;
+					padding: 1rem 2rem;
+					border-radius: 30px;
+					background-image: linear-gradient(
+						to right,
+						hsl(13, 100%, 72%),
+						hsl(353, 100%, 62%)
+					);
+					border: none;
+					font-weight: 600;
+					color: white;
+					cursor: pointer;
+					font-family: "Overpass", sans-serif;
+				}
+			}
+		}
+	}
+	.show-burger-menu {
+		display: block;
+	}
+	.header-bg {
+		header {
+			background-position: 22% 50%;
+			nav {
+				ul {
+					li {
+						display: none;
+					}
+					.login-signup {
+						display: none;
+					}
+					.hamburger {
+						margin-left: auto;
+						display: block;
+					}
+				}
+			}
+			.header-message {
+				text-align: center;
+				h1 {
+					font-size: 4.6rem;
+				}
+			}
+		}
+	}
+	.features {
+		height: 1000px;
+		grid-template-columns: 100%;
+		grid-template-rows: 100px 350px 500px;
+		grid-template-areas:
+			"blank"
+			"svg"
+			"features";
+		.features-welcome {
+			position: relative;
+			grid-area: blank;
+			display: flex;
+			background-color: white;
+			align-items: center;
+			justify-content: center;
+			margin-top: 40px;
+		}
+		.feature-svg {
+			grid-area: svg;
+			background-position: center;
+			background-image: url("../images/illustration-editor-mobile.svg");
+			background-size: 400px;
+		}
+		.feature-text-div {
+			text-align: center;
+			grid-area: features;
+			margin: auto;
+			width: 90%;
+		}
+	}
+
+	.infrastructure-bg {
+		position: relative;
+		margin: 0px 0rem;
+		height: 800px;
+		position: relative;
+		.phones {
+			height: 600px;
+			width: 540px;
+			background-size: 500px;
+
+			top: 40%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.infrastructure {
+			height: 100%;
+			width: 100%;
+
+			flex-direction: column;
+
+			.text {
+				margin: auto auto 50px auto;
+				width: 90%;
+				text-align: center;
+				p {
+					width: 90%;
+					margin: auto;
+				}
+				h6 {
+					font-size: 4rem;
+					line-height: 6rem;
+				}
+			}
+		}
+	}
+	.summary {
+		height: 700px;
+		width: 100%;
+		display: grid;
+		position: relative;
+		grid-template-columns: 100%;
+		grid-template-rows: 280px 600px;
+		grid-template-areas:
+			"svg"
+			"feature";
+		margin: 10px auto;
+		.summary-svg {
+			background-image: url("../images/illustration-laptop-mobile.svg");
+			grid-area: svg;
+			background-position: center;
+			background-size: 400px;
+		}
+		.text-div {
+			text-align: center;
+			grid-area: feature;
+			margin: auto;
+			width: 90%;
+			margin-top: 0px;
+			.text {
+				margin-bottom: 30px;
+			}
+			h6 {
+				font-size: 2.4rem;
+				padding: 1rem 0rem;
+				font-family: "Overpass", sans-serif;
+				color: $feature;
+				font-weight: 600;
+			}
+		}
+	}
+	footer {
+		margin-top: 0px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.infrastructure-bg {
+		height: 520px;
+		margin: 150px 0px 0px 0px;
+		.phones {
+			height: 400px;
+			width: 300px;
+			background-size: 300px;
+			top: 15%;
+		}
+	}
+}
+@media screen and (max-width: 475px) {
+	.features {
+		.feature-svg {
+			grid-area: svg;
+			background-position: center;
+			background-image: url("../images/illustration-editor-mobile.svg");
+			background-size: 300px;
+		}
+	}
+	.summary {
+		height: 750px;
+	}
+	footer {
+		height: 800px;
+		.footer-inside {
+			text-align: center;
+			svg {
+				margin: 0px 0rem 20px 0rem;
+			}
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			ul {
+				.heading {
+					margin: 30px 0px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 392px) {
+	.summary {
+		height: 850px;
+	}
+}
+
+@media screen and (max-width: 348px) {
+	.infrastructure-bg {
+		height: 590px;
+		margin: 250px 0px 0px 0px;
+	}
+}
+
+@media screen and (max-width: 304px) {
+	.infrastructure-bg {
+		height: 690px;
+	}
+}

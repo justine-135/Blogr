@@ -1,0 +1,854 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.header-bg {
+  height: 95vh;
+  min-height: 600px;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+  background-image: linear-gradient(to right, #ff8f70, #ff3d54);
+  border-radius: 0px 0px 0px 80px;
+}
+
+.header-bg header {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/bg-pattern-intro.svg");
+  background-size: 180%;
+  background-position: 22% 50%;
+}
+
+.header-bg header .burger-menu {
+  display: none;
+}
+
+.header-bg header nav {
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.header-bg header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  list-style: none;
+}
+
+.header-bg header nav ul .logo {
+  margin-right: 50px;
+}
+
+.header-bg header nav ul li {
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.header-bg header nav ul li a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.918);
+  font-family: "Ubuntu", sans-serif;
+  margin-right: 10px;
+}
+
+.header-bg header nav ul .up-arrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.header-bg header nav ul li:hover a {
+  text-decoration: underline;
+  color: white;
+}
+
+.header-bg header nav ul li:hover svg path {
+  stroke: white;
+}
+
+.header-bg header nav ul .login-signup {
+  margin-left: auto;
+}
+
+.header-bg header nav ul .login-signup a {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.918);
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.header-bg header nav ul .login-signup a:hover {
+  color: white;
+}
+
+.header-bg header nav ul .login-signup button {
+  margin-left: 20px;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  border-radius: 30px;
+  font-weight: 600;
+  border: none;
+  color: #ff525d;
+  background-color: white;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  -webkit-transition: 100ms ease;
+  transition: 100ms ease;
+}
+
+.header-bg header nav ul .login-signup button:hover {
+  background-color: rgba(255, 255, 255, 0.288);
+  color: white;
+}
+
+.header-bg header .header-message {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-bg header .header-message h1 {
+  font-size: 5.6rem;
+  color: white;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+}
+
+.header-bg header .header-message span {
+  padding: 20px 0px 50px 0px;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.918);
+  font-family: "Overpass", sans-serif;
+}
+
+.header-bg header .header-message .cta-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 250px;
+}
+
+.header-bg header .header-message .cta-buttons .cta-start {
+  padding: 0.75rem 1rem;
+  font-size: 1.6rem;
+  border-radius: 30px;
+  font-weight: 600;
+  border: none;
+  color: #ff525d;
+  background-color: white;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  -webkit-transition: 100ms ease;
+  transition: 100ms ease;
+}
+
+.header-bg header .header-message .cta-buttons .cta-start:hover {
+  background-color: rgba(255, 255, 255, 0.288);
+  color: white;
+}
+
+.header-bg header .header-message .cta-buttons .cta-learn {
+  padding: 0.75rem 1rem;
+  font-size: 1.6rem;
+  border-radius: 30px;
+  font-weight: 400;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  -webkit-transition: 100ms ease;
+  transition: 100ms ease;
+}
+
+.header-bg header .header-message .cta-buttons .cta-learn:hover {
+  background-color: white;
+  color: #ff525d;
+  font-weight: 700;
+}
+
+.header-bg header .hamburger {
+  display: none;
+}
+
+.header-bg header .header-connect {
+  height: auto;
+  width: 180px;
+  background-color: white;
+  text-align: left;
+  font-size: 1.6rem;
+  padding: 2.5rem 2rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 25px rgba(54, 54, 54, 0.377);
+          box-shadow: 1px 1px 25px rgba(54, 54, 54, 0.377);
+  margin-left: 426px;
+  position: relative;
+  z-index: 2;
+  display: none;
+}
+
+.header-bg header .header-connect li {
+  padding: 0.5rem 0rem;
+  list-style: none;
+}
+
+.header-bg header .header-connect li a {
+  font-size: 1.4rem;
+  color: black;
+  text-decoration: none;
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+}
+
+.header-bg header .header-connect li a:hover {
+  font-weight: 600;
+}
+
+.header-bg header .header-connect-show {
+  display: block;
+}
+
+.header-bg header .header-company {
+  height: auto;
+  width: 180px;
+  background-color: white;
+  text-align: left;
+  font-size: 1.6rem;
+  padding: 2.5rem 2rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 25px rgba(54, 54, 54, 0.377);
+          box-shadow: 1px 1px 25px rgba(54, 54, 54, 0.377);
+  margin-left: 310px;
+  position: relative;
+  z-index: 2;
+  display: none;
+}
+
+.header-bg header .header-company li {
+  padding: 0.5rem 0rem;
+  list-style: none;
+}
+
+.header-bg header .header-company li a {
+  font-size: 1.4rem;
+  color: black;
+  text-decoration: none;
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+}
+
+.header-bg header .header-company li a:hover {
+  font-weight: 600;
+}
+
+.header-bg header .header-company-show {
+  display: block;
+}
+
+.header-bg header .header-product {
+  height: auto;
+  width: 180px;
+  background-color: white;
+  text-align: left;
+  font-size: 1.6rem;
+  padding: 2.5rem 2rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 25px rgba(54, 54, 54, 0.377);
+          box-shadow: 1px 1px 25px rgba(54, 54, 54, 0.377);
+  margin-left: 200px;
+  position: relative;
+  z-index: 2;
+  display: none;
+}
+
+.header-bg header .header-product li {
+  padding: 0.5rem 0rem;
+  list-style: none;
+}
+
+.header-bg header .header-product li a {
+  font-size: 1.4rem;
+  color: black;
+  text-decoration: none;
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+}
+
+.header-bg header .header-product li a:hover {
+  font-weight: 600;
+}
+
+.header-bg header .header-product-show {
+  display: block;
+}
+
+.features {
+  height: 100vh;
+  min-height: 600px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 8% auto;
+      grid-template-rows: 8% auto;
+      grid-template-areas: "blank blank" "features svg";
+}
+
+.features .features-welcome {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  color: #4b5862;
+  text-align: center;
+}
+
+.features .feature-text-div {
+  font-family: "Overpass", sans-serif;
+  color: #4b5862;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  margin-top: 80px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: features;
+  margin-left: 10%;
+}
+
+.features .feature-text-div h6 {
+  font-size: 2.4rem;
+  padding: 1rem 0rem;
+  font-family: "Overpass", sans-serif;
+  color: #4b5862;
+  font-weight: 600;
+}
+
+.features .feature-text-div .feature-text {
+  margin-bottom: 30px;
+}
+
+.features .feature-svg {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: svg;
+  background-image: url("../images/illustration-editor-desktop.svg");
+  background-position: 180px 50%;
+  background-size: 88%;
+  background-repeat: no-repeat;
+}
+
+.infrastructure-bg {
+  border-radius: 0px 80px 0px 80px;
+  margin: 100px 0rem;
+  height: 400px;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2c2d3f), to(#3f4164));
+  background-image: linear-gradient(to right, #2c2d3f, #3f4164);
+  position: relative;
+  overflow: visible;
+}
+
+.infrastructure-bg .phones {
+  height: 700px;
+  width: 100%;
+  background-image: url("../images/illustration-phones.svg");
+  background-size: 600px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -20%;
+}
+
+.infrastructure-bg .infrastructure {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image: url("../images/bg-pattern-circles.svg");
+  background-position: -300px 80%;
+  background-size: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.infrastructure-bg .infrastructure .text {
+  margin-left: 600px;
+  max-width: 700px;
+  font-size: 1.6rem;
+  color: white;
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+  line-height: 3rem;
+}
+
+.infrastructure-bg .infrastructure .text p {
+  width: 80%;
+}
+
+.infrastructure-bg .infrastructure .text h6 {
+  font-size: 2.4rem;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  color: white;
+  padding: 1rem 0rem;
+}
+
+.summary {
+  height: 100vh;
+  min-height: 600px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 8% auto;
+      grid-template-rows: 8% auto;
+      grid-template-areas: "blank blank" "svg feature";
+}
+
+.summary .summary-svg {
+  background-image: url("../images/illustration-laptop-desktop.svg");
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: svg;
+  background-position: -110px 50%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.summary .text-div {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: feature;
+  margin-right: 10%;
+  font-size: 1.6rem;
+  font-family: "Overpass", sans-serif;
+  color: #4b5862;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  margin-top: 89px;
+}
+
+.summary .text-div .text {
+  margin-bottom: 30px;
+}
+
+.summary .text-div h6 {
+  font-size: 2.4rem;
+  padding: 1rem 0rem;
+  font-family: "Overpass", sans-serif;
+  color: #4b5862;
+  font-weight: 600;
+}
+
+footer {
+  margin-top: 100px;
+  height: 300px;
+  width: 100%;
+  background-color: #25252d;
+  border-radius: 0px 80px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer-inside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin: 50px auto;
+  width: 90%;
+}
+
+footer .footer-inside svg {
+  margin-top: -12px;
+}
+
+footer .footer-inside ul {
+  font-family: "Overpass", sans-serif;
+  list-style: none;
+}
+
+footer .footer-inside ul .heading {
+  font-size: 1.6rem;
+  color: white;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+footer .footer-inside ul a {
+  color: rgba(255, 255, 255, 0.568);
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+footer .footer-inside ul a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-inside ul li {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1052px) {
+  .burger-menu {
+    display: none;
+    position: relative;
+    z-index: 2;
+    height: auto;
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 25px rgba(54, 54, 54, 0.377);
+            box-shadow: 1px 1px 25px rgba(54, 54, 54, 0.377);
+    padding: 2rem 1rem;
+    -webkit-transition: 200ms ease;
+    transition: 200ms ease;
+  }
+  .burger-menu ul {
+    list-style-type: none;
+    margin: auto;
+    width: 90%;
+    text-align: center;
+  }
+  .burger-menu ul li {
+    margin: 1rem 0rem;
+  }
+  .burger-menu ul li ul {
+    display: none;
+    background-color: rgba(194, 194, 194, 0.247);
+    border-radius: 6px;
+    padding: 2rem 0rem;
+  }
+  .burger-menu ul li ul li a {
+    font-size: 1.4rem;
+  }
+  .burger-menu ul li .burger-show-links {
+    display: block;
+  }
+  .burger-menu ul li a {
+    text-decoration: none;
+    color: #3f4164;
+    font-size: 1.6rem;
+    margin-right: 10px;
+    font-family: "Overpass", sans-serif;
+    font-weight: 600;
+  }
+  .burger-menu ul li svg path {
+    stroke: black;
+  }
+  .burger-menu ul li .burger-up-arrow {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .burger-menu ul .login-signup {
+    border-top: 1px solid gray;
+    width: 100%;
+    height: auto;
+    padding: 1rem 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .burger-menu ul .login-signup a {
+    font-size: 1.8rem;
+    padding: 1.5rem 0rem;
+    text-decoration: none;
+    color: #3f4164;
+    font-family: "Overpass", sans-serif;
+    font-weight: 600;
+  }
+  .burger-menu ul .login-signup button {
+    margin-top: 10px;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+    background-image: linear-gradient(to right, #ff8f70, #ff3d54);
+    border: none;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    font-family: "Overpass", sans-serif;
+  }
+  .show-burger-menu {
+    display: block;
+  }
+  .header-bg header {
+    background-position: 22% 50%;
+  }
+  .header-bg header nav ul li {
+    display: none;
+  }
+  .header-bg header nav ul .login-signup {
+    display: none;
+  }
+  .header-bg header nav ul .hamburger {
+    margin-left: auto;
+    display: block;
+  }
+  .header-bg header .header-message {
+    text-align: center;
+  }
+  .header-bg header .header-message h1 {
+    font-size: 4.6rem;
+  }
+  .features {
+    height: 1000px;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 100px 350px 500px;
+        grid-template-rows: 100px 350px 500px;
+        grid-template-areas: "blank" "svg" "features";
+  }
+  .features .features-welcome {
+    position: relative;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: blank;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: white;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 40px;
+  }
+  .features .feature-svg {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: svg;
+    background-position: center;
+    background-image: url("../images/illustration-editor-mobile.svg");
+    background-size: 400px;
+  }
+  .features .feature-text-div {
+    text-align: center;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: features;
+    margin: auto;
+    width: 90%;
+  }
+  .infrastructure-bg {
+    position: relative;
+    margin: 0px 0rem;
+    height: 800px;
+    position: relative;
+  }
+  .infrastructure-bg .phones {
+    height: 600px;
+    width: 540px;
+    background-size: 500px;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .infrastructure-bg .infrastructure {
+    height: 100%;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .infrastructure-bg .infrastructure .text {
+    margin: auto auto 50px auto;
+    width: 90%;
+    text-align: center;
+  }
+  .infrastructure-bg .infrastructure .text p {
+    width: 90%;
+    margin: auto;
+  }
+  .infrastructure-bg .infrastructure .text h6 {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+  .summary {
+    height: 700px;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    position: relative;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 280px 600px;
+        grid-template-rows: 280px 600px;
+        grid-template-areas: "svg" "feature";
+    margin: 10px auto;
+  }
+  .summary .summary-svg {
+    background-image: url("../images/illustration-laptop-mobile.svg");
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: svg;
+    background-position: center;
+    background-size: 400px;
+  }
+  .summary .text-div {
+    text-align: center;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: feature;
+    margin: auto;
+    width: 90%;
+    margin-top: 0px;
+  }
+  .summary .text-div .text {
+    margin-bottom: 30px;
+  }
+  .summary .text-div h6 {
+    font-size: 2.4rem;
+    padding: 1rem 0rem;
+    font-family: "Overpass", sans-serif;
+    color: #4b5862;
+    font-weight: 600;
+  }
+  footer {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .infrastructure-bg {
+    height: 520px;
+    margin: 150px 0px 0px 0px;
+  }
+  .infrastructure-bg .phones {
+    height: 400px;
+    width: 300px;
+    background-size: 300px;
+    top: 15%;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .features .feature-svg {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: svg;
+    background-position: center;
+    background-image: url("../images/illustration-editor-mobile.svg");
+    background-size: 300px;
+  }
+  .summary {
+    height: 750px;
+  }
+  footer {
+    height: 800px;
+  }
+  footer .footer-inside {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer-inside svg {
+    margin: 0px 0rem 20px 0rem;
+  }
+  footer .footer-inside ul .heading {
+    margin: 30px 0px;
+  }
+}
+
+@media screen and (max-width: 392px) {
+  .summary {
+    height: 850px;
+  }
+}
+
+@media screen and (max-width: 348px) {
+  .infrastructure-bg {
+    height: 590px;
+    margin: 250px 0px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 304px) {
+  .infrastructure-bg {
+    height: 690px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
